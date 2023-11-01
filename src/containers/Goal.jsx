@@ -1,7 +1,9 @@
 import '../index.css';
 import { goal, goalx2 } from '../assets/images/Goal';
+import { useThank } from 'hooks/ThankContext';
 
 const Goal = () => {
+  const { showModal } = useThank();
   return (
     <div className=" pt-[60px] px-[16px] md:pt-[102px] md:px-[40px] lg:pt-[80px] lg:px-[60px]">
       <h2 className=" text-sky-100 text-center md:text-start text-[56px]   leading-[67.20px] mb-[24px] md:mb-[32px]  lg:mb-[24px] title ">
@@ -30,7 +32,10 @@ const Goal = () => {
             Адже його працівники мужньо стоять на варті життя та здоров’я наших
             захисників.
           </p>
-          <button className="w-[100%] md:w-[312px] h-[88px] p-4 bg-blue-200 hover:bg-blue-300 focus:bg-blue-300  rounded-2xl shadow justify-center items-center gap-2 inline-flex  text-stone-950 text-[40px] font-normal title cursor-pointer">
+          <button
+            onClick={showModal}
+            className="w-[100%] md:w-[312px] h-[88px] p-4 bg-blue-200 hover:bg-blue-300 focus:bg-blue-300  rounded-2xl shadow justify-center items-center gap-2 inline-flex  text-stone-950 text-[40px] font-normal title cursor-pointer"
+          >
             Зробити донат
           </button>
         </div>
