@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'Mona';
+  src: url('./Mona_Lisa_engravedC.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Monserrat';
+  src: url('./Montserrat-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text {
+  font-family: 'Monserrat', sans-serif;
+}
+
+.title {
+  font-family: 'Mona', serif;
+}
