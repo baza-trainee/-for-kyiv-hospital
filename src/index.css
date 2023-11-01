@@ -1,3 +1,92 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer {
+  .container {
+    padding: 0px 8px;
+    margin: 0px auto;
+  }
+
+  @media screen and (min-width: 375px) {
+    .container {
+      width: 359px;
+    }
+  }
+
+  @media screen and (min-width: 744px) {
+    .container {
+      width: 688px;
+      padding: 0px 12px;
+    }
+  }
+
+  @media screen and (min-width: 1440px) {
+    .container {
+      width: 1344px;
+      margin: 0px 60px;
+    }
+  }
+
+  .img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    max-width: 1440px;
+    /*  ds 700
+      tb 1130
+    mb 812 */
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 148px;
+    padding-bottom: 67px;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background: #003948;
+
+    /* Phone */
+    background-image: url(./image/hero/hero_x1_375.jpg);
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(./image/hero/hero_x2_375.jpg);
+    }
+
+    /* Tablet */
+
+    @media screen and (min-width: 744px) {
+      background-image: url(./image/hero/hero_x1_744.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(./image/hero/hero_x2_744.jpg);
+      }
+
+      /* Deskop */
+
+      @media screen and (min-width: 1440px) {
+        background-image: url(./image/hero/hero_x1_1440.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(./image/hero/hero_x2_1440.jpg);
+        }
+      }
+    }
+  }
+}
