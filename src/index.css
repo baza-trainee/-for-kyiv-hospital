@@ -9,32 +9,7 @@
     background-color: #003948;
   }
 
-  .container {
-    padding: 0px 16px;
-    margin: 0px auto;
-  }
-
-  @media screen and (min-width: 375px) {
-    .container {
-      width: 375px;
-    }
-  }
-
-  @media screen and (min-width: 744px) {
-    .container {
-      width: 774px;
-      padding: 0px 40px;
-    }
-  }
-
-  @media screen and (min-width: 1440px) {
-    .container {
-      width: 1440px;
-      padding: 0px 60px;
-    }
-  }
-
-  .img {
+  img {
     display: block;
     max-width: 100%;
     height: auto;

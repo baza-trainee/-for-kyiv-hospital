@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <section className="overlay sm:h-[812px] md:h-[1130px] lg:h-[700px]">
-      <div className="container">
+      <div className="container mx-auto px-[16px] md:px-[40px] lg:px-[60px]">
         <div className="sm:text-center md:text-start">
           <h1 className="sm:w-[343px] md:w-[664px] lg:w-[653px] title sm:text-[56px] md:text-[88px] text-white leading-none">
             Зроби внесок у Перемогу!
