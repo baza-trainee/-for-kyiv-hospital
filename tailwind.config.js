@@ -18,8 +18,13 @@ module.exports = {
       },
       lineHeight: {
         'line-height-extra': '1.2',
+
+        boxShadow: {
+          back: '0px 4px 4px 0px #748C97',
+          backInsert: '0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset',
+        },
       },
     },
+    plugins: [],
   },
-  plugins: [],
 };
