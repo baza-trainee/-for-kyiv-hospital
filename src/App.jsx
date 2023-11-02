@@ -9,12 +9,10 @@ export const App = () => {
   console.log(isShowThank);
   return (
     <>
-      <div className="container mx-auto">
-        <Header />
-        <Goal />
-        <About />
-        {isShowThank ? <Thank /> : null}
-      </div>
+      <Header />
+      <Goal />
+      <About />
+      {isShowThank ? <Thank /> : null}
     </>
   );
 };
