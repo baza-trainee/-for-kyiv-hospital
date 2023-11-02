@@ -11,7 +11,15 @@ module.exports = {
       title: ['Mona-Lisa', 'sans-serif'],
       text: ['Monserrat', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        'light-blue': 'rgba(197, 223, 240, 1)',
+        'active-donate-btn': 'rgba(160, 211, 244, 1)',
+      },
+      lineHeight: {
+        'line-height-extra': '1.2',
+      },
+    },
   },
   plugins: [],
 };

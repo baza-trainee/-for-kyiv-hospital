@@ -1,56 +1,18 @@
 const Hero = () => {
   return (
-    <section style={{ width: '100%', background: '#003948' }}>
-      <div className="overlay">
-        <div className="container">
-          <div style={{ width: 648 }}>
-            <h1
-              style={{
-                fontFamily: 'Mona Lisa engravedC',
-                fontSize: 88,
-                fontWeight: 400,
-                lineHeight: 'calc(88 / 88)',
-                letterSpacing: '0em',
-                color: 'white',
-              }}
-            >
-              Зроби внесок у Перемогу!
-            </h1>
-            <p
-              style={{
-                marginTop: 24,
-                fontFamily: 'Montserrat',
-                fontSize: 32,
-                fontWeight: 400,
-                lineHeight: 'cacl(32 / 40)',
-                letterSpacing: '0em',
-                color: 'white',
-              }}
-              className="text"
-            >
-              Медики Головного військового клінічного госпіталю мужньо боряться
-              за життя наших захисників, але без твоєї допомоги вони безкрилі.
-            </p>
-            <button
-              style={{
-                display: 'inline-block',
-                width: 312,
-                height: 88,
-                padding: 16,
-
-                marginTop: 42,
-
-                backgroundColor: 'rgba(197, 223, 240, 1)',
-                color: 'rgba(16, 11, 7, 1)',
-                fontFamily: 'Mona Lisa engravedC',
-                fontSize: 40,
-                lineHeight: 'calc(40 / 48)',
-                borderRadius: 16,
-              }}
-            >
-              Зробити донат
-            </button>
-          </div>
+    <section className="overlay">
+      <div className="container">
+        <div className="sm:text-center md:text-start md:w-fit">
+          <h1 className="sm:w-[343px] md:w-[664px] lg:w-[653px] title sm:text-[56px] md:text-[88px] text-white leading-none">
+            Зроби внесок у Перемогу!
+          </h1>
+          <p className="sm:w-[343px] md:w-[578px] lg:w-[648px] text text-white sm:mt-[48px] md:mt-[40px] mt-[24px] sm:text-[24px] lg:text-[32px] leading-tight">
+            Медики Головного військового клінічного госпіталю мужньо боряться за
+            життя наших захисників, але без твоєї допомоги вони безкрилі.
+          </p>
+          <button className="inline-block w-[312px] sm:h-[88px] md:h-[110px] lg:h-[88px] p-4 sm:mt-[145px] md:mt-[123px] mt-[42px] bg-light-blue title hover:bg-active-donate-btn focus:bg-active-donate-btn text-black text-[40px] line-height-extra rounded-2xl">
+            Зробити донат
+          </button>
         </div>
       </div>
     </section>

@@ -5,7 +5,7 @@
 @import './assets/fonts/custom-fonts.css';
 
 @layer {
-  .body {
+  body {
     background-color: #003948;
   }
 
@@ -23,13 +23,14 @@
   @media screen and (min-width: 744px) {
     .container {
       width: 688px;
-      padding: 0px 12px;
+      padding: 0px 40px;
     }
   }
 
   @media screen and (min-width: 1440px) {
     .container {
       width: 1344px;
+      padding: 0px 60px;
       margin: 0px 60px;
     }
   }
@@ -42,10 +43,7 @@
 
   .overlay {
     max-width: 1440px;
-    /*  ds 700
-      tb 1130
-    mb 812 */
-    height: 700px;
+    height: 812px;
     margin-left: auto;
     margin-right: auto;
 
@@ -68,6 +66,7 @@
     /* Tablet */
 
     @media screen and (min-width: 744px) {
+      height: 1130px;
       background-image: url(./image/hero/hero_x1_744.jpg);
       background-repeat: no-repeat;
       background-size: cover;
@@ -82,6 +81,7 @@
       /* Deskop */
 
       @media screen and (min-width: 1440px) {
+        height: 700px;
         background-image: url(./image/hero/hero_x1_1440.jpg);
         background-repeat: no-repeat;
         background-size: cover;
