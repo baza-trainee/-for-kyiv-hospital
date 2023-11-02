@@ -28,7 +28,7 @@ const Thank = () => {
           </div>
           <div
             onClick={closeModal}
-            className="z-10 cursor-pointer w-[343px] h-20 p-4 md:mt-[162px] lg:mt-[96px] bg-blue-300 rounded-2xl shadow justify-center items-center gap-4 inline-flex "
+            className="z-10 cursor-pointer w-[343px] h-20 p-4 md:mt-[162px] lg:mt-[96px] bg-blue-300 rounded-2xl shadow justify-center items-center gap-4 inline-flex hover:shadow-back active:shadow-backInsert"
           >
             <button className="text-stone-950 text-[40px] font-normal title leading-[48px]">
               Повернутися назад
