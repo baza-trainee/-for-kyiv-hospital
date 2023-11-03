@@ -34,9 +34,9 @@ const About = () => {
   }, []);
 
   return (
-    <div
+    <section
       id="about"
-      className="md:pb-[60px] pt-[60px] px-[16px] md:pt-[102px] md:px-[40px] lg:pt-[80px] lg:px-[60px] mb-[80px]"
+      className="container mx-auto md:pb-[60px] pt-[60px] px-[16px] md:pt-[102px] md:px-[40px] lg:pt-[80px] lg:px-[60px] mb-[80px]"
     >
       <h2 className=" text-sky-100 text-center md:text-start leading-[67.20px] mb-[24px] md:mb-[32px]  lg:mb-[24px] title text-[56px]">
         Про госпіталь
@@ -85,16 +85,17 @@ const About = () => {
               <img src={more} alt="more" />
             </div>
           )}
+
           <button
             onClick={showModal}
-            className="w-[100%] md:w-[312px] h-[88px] p-4 bg-blue-200 hover:bg-blue-300 focus:bg-blue-300  rounded-2xl shadow justify-center items-center gap-2 inline-flex  text-stone-950 text-[40px] font-normal title cursor-pointer"
+            className="w-[100%] md:w-[312px] h-[88px] p-4 title bg-light-blue hover:bg-active-donate-btn focus:bg-active-donate-btn rounded-2xl shadow-donateBoxShadow transition-all justify-center items-center gap-2 inline-flex  text-stone-950 text-[40px] font-normal line-height-extra cursor-pointer"
           >
             Зробити донат
           </button>
           <MoreModal isVisible={isModalVisible} closeHandler={closeModal} />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
