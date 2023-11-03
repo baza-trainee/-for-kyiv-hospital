@@ -14,10 +14,13 @@ module.exports = {
     extend: {
       colors: {
         'light-blue': 'rgba(197, 223, 240, 1)',
-        'active-donate-btn': 'rgba(160, 211, 244, 1)',
+        'blue-sky': 'rgba(225, 244, 250, 1)',
+        'active-btn': 'rgba(160, 211, 244, 1)',
+        'header-color': 'rgba(239, 243, 246, 0.25)',
       },
       lineHeight: {
-        'line-height-extra': '1.2',
+        1.2: '1.2',
+        1.3: '1.3',
       },
       boxShadow: {
         back: '0px 4px 4px 0px #748C97',
