@@ -5,7 +5,7 @@ import { useThank } from 'hooks/ThankContext';
 const Goal = () => {
   const { showModal } = useThank();
   return (
-    <div className=" pt-[60px] px-[16px] md:pt-[102px] md:px-[40px] lg:pt-[80px] lg:px-[60px]">
+    <div className=" container mx-auto pt-[60px] px-[16px] md:pt-[102px] md:px-[40px] lg:pt-[80px] lg:px-[60px]">
       <h2 className=" text-sky-100 text-center md:text-start text-[56px]   leading-[67.20px] mb-[24px] md:mb-[32px]  lg:mb-[24px] title ">
         Мета
       </h2>
