@@ -10,7 +10,7 @@ const Hero = () => {
             Медики Головного військового клінічного госпіталю мужньо боряться за
             життя наших захисників, але без твоєї допомоги вони безкрилі.
           </p>
-          <button className="inline-block sm:w-[343px] md:w-[312px] sm:h-[88px] md:h-[110px] lg:h-[88px] p-4 sm:mt-[145px] md:mt-[127px] lg:mt-[42px] bg-light-blue title hover:bg-active-donate-btn focus:bg-active-donate-btn text-black text-[40px] line-height-extra rounded-2xl shadow-donateBoxShadow transition-all">
+          <button className="inline-block sm:w-[343px] md:w-[312px] sm:h-[88px] md:h-[110px] lg:h-[88px] p-4 sm:mt-[145px] md:mt-[127px] lg:mt-[42px] bg-light-blue title hover:bg-active-btn focus:bg-active-btn text-black text-[40px] leading-1.2 rounded-2xl shadow-donateBoxShadow transition-all">
             Зробити донат
           </button>
         </div>

@@ -5,6 +5,10 @@
 @import './assets/fonts/custom-fonts.css';
 
 @layer {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     background-color: #003948;
   }
