@@ -3,7 +3,7 @@ import { moreclose } from 'assets/images/About';
 
 const ModalContent = ({ isVisible, closeHandler }) => {
   return (
-    <div
+    <section
       className={`fixed top-0 left-0 w-full h-full flex items-center justify-center transition-opacity duration-300 ${
         isVisible ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
       }`}>
@@ -17,7 +17,7 @@ const ModalContent = ({ isVisible, closeHandler }) => {
           інфекційних хворих), відділення функціональної діагностики і фарм-центр. Шпиталь розрахований на 1125 ліжок.
         </p>
       </div>
-    </div>
+    </section>
   );
 };
 
