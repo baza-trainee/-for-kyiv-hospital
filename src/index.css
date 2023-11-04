@@ -1,3 +1,75 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import './assets/fonts/custom-fonts.css';
+
+@layer {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #003948;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .overlay {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-top: 150px;
+    padding-bottom: 67px;
+
+    background: #003948;
+
+    /* Phone */
+    background-image: url(./assets/images/Hero/hero_x1_375.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(./assets/images/Hero/hero_x2_375.jpg);
+    }
+
+    /* Tablet */
+    @media screen and (min-width: 744px) {
+      height: 1130px;
+      padding-top: 214px;
+      background-image: url(./assets/images/Hero/hero_x1_744.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(./assets/images/Hero/hero_x2_744.jpg);
+      }
+
+      /* Deskop */
+      @media screen and (min-width: 1440px) {
+        height: 700px;
+        padding-top: 150px;
+        background-image: url(./assets/images/Hero/hero_x1_1440.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+          background-image: url(./assets/images/Hero/hero_x2_1440.jpg);
+        }
+      }
+    }
+  }
+}
