@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import '../index.css';
 import { hospital, hospitalx2, more } from '../assets/images/About';
-import { useThank } from 'hooks/ThankContext';
 import MoreModal from 'containers/MoreModal';
 
 const About = () => {
-  const { showModal } = useThank();
   const [isParagraphVisible, setIsParagraphVisible] = useState(true);
   const [isMoreVisible, setIsMoreVisible] = useState(true);
   const [isModalVisible, setIsModalVisible] = useState(false);
@@ -85,13 +83,6 @@ const About = () => {
               <img src={more} alt="more" />
             </div>
           )}
-
-          <button
-            onClick={showModal}
-            className="w-[100%] md:w-[312px] h-[88px] p-4 title bg-light-blue hover:bg-active-donate-btn focus:bg-active-donate-btn rounded-2xl shadow-donateBoxShadow transition-all justify-center items-center gap-2 inline-flex  text-stone-950 text-[40px] font-normal line-height-extra cursor-pointer"
-          >
-            Зробити донат
-          </button>
           <MoreModal isVisible={isModalVisible} closeHandler={closeModal} />
         </div>
       </div>
