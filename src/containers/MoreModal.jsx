@@ -9,9 +9,9 @@ const ModalContent = ({ isVisible, closeHandler }) => {
       }`}>
       <div className="w-[419px] bg-cyan-950 px-[38px]">
         <span className="relative">
-          <img src={moreclose} alt="close" className="cursor-pointer" onClick={closeHandler} />
+          <img src={moreclose} alt="close" className="cursor-pointer mt-[50px]" onClick={closeHandler} />
         </span>
-        <p className="mb-[40px] mt-[124px] text text-[16px] text-sky-100 text-base font-normal leading-tight">
+        <p className="mb-[40px] mt-[25px] text text-[16px] text-sky-100 text-base font-normal leading-tight">
           До штату центру входять: 26 клінік (понад 40 відділень), клініка лабораторної діагностики, сучасна клініка
           променевої діагностики і терапії, 4 реанімаційні підрозділи (хірургічний, нейрохірургічний, кардіологічний та для
           інфекційних хворих), відділення функціональної діагностики і фарм-центр. Шпиталь розрахований на 1125 ліжок.

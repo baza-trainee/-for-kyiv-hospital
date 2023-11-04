@@ -6,6 +6,7 @@ import Thank from './containers/Thank-Modal';
 import { useThank } from './hooks/ThankContext';
 import About from 'containers/About';
 import ErrorPage from 'containers/ErrorPage';
+import ScrollToTopButton from './components/ScrollToTopButton';
 
 export const App = () => {
   const { isShowThank } = useThank();
@@ -21,6 +22,7 @@ export const App = () => {
               <Goal />
               <About />
               {isShowThank ? <Thank /> : null}
+              <ScrollToTopButton />
             </>
           }
         />
