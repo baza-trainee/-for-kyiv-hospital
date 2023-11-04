@@ -1,13 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.81c478cd.css",
-    "main.js": "/static/js/main.a01757fb.js",
+    "main.css": "/static/css/main.a8b6e4e4.css",
+    "main.js": "/static/js/main.646599f0.js",
+    "static/media/goal@2x.jpg": "/static/media/goal@2x.0be8134785c7462be613.jpg",
+    "static/media/goal.jpg": "/static/media/goal.33596260153b89942735.jpg",
+    "static/media/hospital@2x.png": "/static/media/hospital@2x.7a4baa96a4f5d90ab6a2.png",
+    "static/media/hospital.png": "/static/media/hospital.8df830767ef7369fc94b.png",
+    "static/media/Montserrat-VariableFont_wght.ttf": "/static/media/Montserrat-VariableFont_wght.7e687123cd4528224ce5.ttf",
+    "static/media/thank@2x.png": "/static/media/thank@2x.7c11bb789c41c14d4138.png",
+    "static/media/hero_x2_1440.jpg": "/static/media/hero_x2_1440.4dd3658f8b52e348f8bd.jpg",
+    "static/media/hero_x2_744.jpg": "/static/media/hero_x2_744.daced3abcce21381283f.jpg",
+    "static/media/Mona_Lisa_engravedC.ttf": "/static/media/Mona_Lisa_engravedC.4b3c71ceef1a29a1f1c7.ttf",
+    "static/media/error.png": "/static/media/error.3eb99accb1fe3d59b8ac.png",
+    "static/media/error@2x.png": "/static/media/error@2x.7de48398213f60f02486.png",
+    "static/media/thank.png": "/static/media/thank.54dc7d0abea716c91f4a.png",
+    "static/media/hero_x1_1440.jpg": "/static/media/hero_x1_1440.973dfbd367e5377cb10b.jpg",
+    "static/media/hero_x2_375.jpg": "/static/media/hero_x2_375.5a31a3706438d8d24344.jpg",
+    "static/media/hero_x1_744.jpg": "/static/media/hero_x1_744.9634da6edcc7e4f3dd2b.jpg",
+    "static/media/hero_x1_375.jpg": "/static/media/hero_x1_375.da2436a712ec07038aa4.jpg",
+    "static/media/close-svg.svg": "/static/media/close-svg.af8fa4bdfd89cc8d3fd64d643c7f4736.svg",
+    "static/media/more.svg": "/static/media/more.6c0195773c65a65b2d6755d857e2a248.svg",
+    "static/media/moreclose.svg": "/static/media/moreclose.6c0195773c65a65b2d6755d857e2a248.svg",
     "index.html": "/index.html",
-    "main.81c478cd.css.map": "/static/css/main.81c478cd.css.map",
-    "main.a01757fb.js.map": "/static/js/main.a01757fb.js.map"
+    "static/media/arrow.svg": "/static/media/arrow.5297a3be28293719242b83cb76aab1c8.svg",
+    "main.a8b6e4e4.css.map": "/static/css/main.a8b6e4e4.css.map",
+    "main.646599f0.js.map": "/static/js/main.646599f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.81c478cd.css",
-    "static/js/main.a01757fb.js"
+    "static/css/main.a8b6e4e4.css",
+    "static/js/main.646599f0.js"
   ]
 }
