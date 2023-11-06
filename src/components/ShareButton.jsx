@@ -1,9 +1,15 @@
 import { FiExternalLink } from 'react-icons/fi';
 
+import { useShareModal } from '../hooks/ShareContext';
+
 const ShareButton = () => {
+  const { showShareModal } = useShareModal();
   return (
     <>
-      <button className=" flex items-center justify-center w-[160px]  md:w-[200px] h-[40px] md:h-[90px]  md:px-[18px]  md:rounded-b-2xl md:shadow-donateBoxShadow bg-blue-sky hover:bg-active-btn focus:bg-active-btn transition-all">
+      <button
+        onClick={showShareModal}
+        className=" flex items-center justify-center w-[160px]  md:w-[200px] h-[40px] md:h-[90px]  md:px-[18px]  md:rounded-b-2xl md:shadow-donateBoxShadow bg-blue-sky hover:bg-active-btn focus:bg-active-btn transition-all"
+      >
         <p className="title text-start text-[24px] leading-[18px] tracking-wider ">
           Поділитися з друзями
         </p>
