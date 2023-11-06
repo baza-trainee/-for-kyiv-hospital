@@ -62,13 +62,11 @@ const Header = () => {
             <CgMenuRound className="w-full h-full text-blue-sky" />
           </button>
         </div>
-        {/* Menu */}
+        {/* Mobile Menu */}
         <div
-          className={`lg:hidden absolute top-0 left-0 md:top-[90px] w-full h-[252px] md:h-[231px] px-[12px] py-[28px] md:p-[32px] bg-blue-sky rounded-2xl transition-all duration-200
+          className={`md:hidden lg:hidden absolute top-0 left-0 md:top-[90px] w-full h-[252px] md:h-full px-[12px] py-[28px] md:p-[32px] bg-blue-sky rounded-2xl transition-all duration-200
             `}
           style={{
-            // opacity: isMenu ? 1 : 0,
-            // transform: isMenu ? 'scale(1)' : 'scale(0.5)',
             top: isMenu ? 0 : -252,
           }}
         >
@@ -113,20 +111,57 @@ const Header = () => {
             </div>
           </nav>
         </div>
-        {/* Test */}
+        {/* Tablet Menu */}
         <div
-          className="hidden md:block lg:hidden absolute z-50 top-0 bg-red-400 h-full rounded-2xl transition-all duration-200"
-          style={{ width: isMenu ? '100%' : '10%', right: isMenu ? 0 : 100 }}
+          className="hidden lg:hidden absolute z-50 top-0 md:flex justify-center items-center bg-blue-sky h-full rounded-2xl transition-all duration-200"
+          style={{
+            width: isMenu ? '100%' : '10%',
+            right: isMenu ? 0 : 100,
+            opacity: isMenu ? 1 : 0,
+          }}
         >
-          <button
-            type="button"
-            onClick={() => {
-              setIsMenu(!isMenu);
-            }}
-            className="absolute top-[10px] right-[10px] w-[35px] h-[35px] lg:hidden"
-          >
-            <AiOutlineCloseCircle className="w-full h-full text-blue-sky" />
-          </button>
+          {isMenu && (
+            <nav className="flex justify-center items-center w-fit">
+              <ul className="flex gap-[40px] mr-[250px]">
+                <li>
+                  <a
+                    onClick={() => setIsMenu(false)}
+                    className="text text-[20px] md:text[24px] font-medium leading-1.2"
+                    href="#goal"
+                  >
+                    Мета
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onClick={() => setIsMenu(false)}
+                    className="text text-[20px] md:text[24px] font-medium leading-1.2"
+                    href="#about"
+                  >
+                    Про Госпіталь
+                  </a>
+                </li>
+                <li>
+                  <a
+                    onClick={() => setIsMenu(false)}
+                    className="text text-[20px] md:text[24px] font-medium leading-1.2"
+                    href="#needs"
+                  >
+                    Потреби
+                  </a>
+                </li>
+              </ul>
+              <button
+                type="button"
+                onClick={() => {
+                  setIsMenu(!isMenu);
+                }}
+                className="w-[35px] h-[35px]"
+              >
+                <AiOutlineCloseCircle className="w-full h-full text-blue-sky md:text-black" />
+              </button>
+            </nav>
+          )}
         </div>
       </header>
       <Hero />
