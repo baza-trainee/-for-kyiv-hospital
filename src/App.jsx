@@ -8,7 +8,9 @@ import {
 import Header from 'containers/Header';
 import Goal from 'containers/Goal';
 import Thank from './containers/Thank-Modal';
+import ShareModal from './containers/ShareModal';
 import { useThank } from './hooks/ThankContext';
+import { useShareModal } from './hooks/ShareContext';
 import About from 'containers/About';
 import ErrorPage from 'containers/ErrorPage';
 import ScrollToTopButton from './components/ScrollToTopButton';
@@ -16,6 +18,7 @@ import Needs from 'containers/Needs';
 
 export const App = () => {
   const { isShowThank } = useThank();
+  const { isShowShareModal } = useShareModal();
 
   return (
     <Router>
@@ -29,6 +32,7 @@ export const App = () => {
               <About />
               <Needs />
               {isShowThank ? <Thank /> : null}
+              {isShowShareModal ? <ShareModal /> : null}
               <ScrollToTopButton />
             </>
           }
