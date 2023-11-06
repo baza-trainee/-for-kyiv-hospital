@@ -4,7 +4,6 @@ import Logo from 'assets/images/Header/Logo';
 import { useState } from 'react';
 
 import { CgMenuRound } from 'react-icons/cg';
-import { AiOutlineClose } from 'react-icons/ai';
 import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 const Header = () => {
@@ -65,11 +64,12 @@ const Header = () => {
         </div>
         {/* Menu */}
         <div
-          className={`lg:hidden absolute top-0 left-0 md:top-[90px] w-full h-[252px] md:h-[231px] px-[12px] py-[28px] md:p-[32px] bg-blue-sky rounded-2xl transition-all duration-200 ease-linear
+          className={`lg:hidden absolute top-0 left-0 md:top-[90px] w-full h-[252px] md:h-[231px] px-[12px] py-[28px] md:p-[32px] bg-blue-sky rounded-2xl transition-all duration-200
             `}
           style={{
-            opacity: isMenu ? 1 : 0,
-            transform: isMenu ? 'scale(1)' : 'scale(0.5)',
+            // opacity: isMenu ? 1 : 0,
+            // transform: isMenu ? 'scale(1)' : 'scale(0.5)',
+            top: isMenu ? 0 : -252,
           }}
         >
           <button
@@ -115,7 +115,7 @@ const Header = () => {
         </div>
         {/* Test */}
         <div
-          className="absolute z-50 top-0 bg-red-400 h-full rounded-2xl transition-all duration-200"
+          className="hidden md:block lg:hidden absolute z-50 top-0 bg-red-400 h-full rounded-2xl transition-all duration-200"
           style={{ width: isMenu ? '100%' : '10%', right: isMenu ? 0 : 100 }}
         >
           <button
