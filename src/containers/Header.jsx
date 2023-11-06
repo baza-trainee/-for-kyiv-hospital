@@ -5,6 +5,7 @@ import { useState } from 'react';
 
 import { CgMenuRound } from 'react-icons/cg';
 import { AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineCloseCircle } from 'react-icons/ai';
 
 const Header = () => {
   const [isMenu, setIsMenu] = useState(false);
@@ -53,29 +54,34 @@ const Header = () => {
           </div>
 
           <button
+            type="button"
             onClick={() => {
               setIsMenu(!isMenu);
             }}
-            className="sm:inline-block w-[40px] h-[40px] lg:hidden"
+            className="inline-block w-[40px] h-[40px] lg:hidden"
           >
-            {isMenu ? (
-              <AiOutlineClose className="w-full h-full text-blue-sky" />
-            ) : (
-              <CgMenuRound className="w-full h-full text-blue-sky" />
-            )}
+            <CgMenuRound className="w-full h-full text-blue-sky" />
           </button>
         </div>
         {/* Menu */}
-
         <div
-          className={`lg:hidden absolute right-0 sm:top-[84px] md:top-[90px] w-[200px] md:w-[241px] h-[252px] md:h-[231px] px-[12px] py-[28px] md:p-[32px] bg-blue-sky rounded-2xl transition-all duration-200 ease-linear
+          className={`lg:hidden absolute top-0 left-0 md:top-[90px] w-full h-[252px] md:h-[231px] px-[12px] py-[28px] md:p-[32px] bg-blue-sky rounded-2xl transition-all duration-200 ease-linear
             `}
           style={{
             opacity: isMenu ? 1 : 0,
             transform: isMenu ? 'scale(1)' : 'scale(0.5)',
           }}
         >
-          <nav className="w-[200px]">
+          <button
+            type="button"
+            onClick={() => {
+              setIsMenu(!isMenu);
+            }}
+            className="absolute top-[10px] right-[10px] w-[35px] h-[35px]"
+          >
+            <AiOutlineCloseCircle className="w-[35px] h-[35px] text-black" />
+          </button>
+          <nav className="w-[200px] mx-auto text-center">
             <ul className="flex flex-col gap-[24px] md:gap-[40px] mb-[24px] md:mb-[0px] ">
               <li>
                 <a
@@ -102,10 +108,25 @@ const Header = () => {
                 </a>
               </li>
             </ul>
-            <div className=" md:hidden  ">
+            <div className="md:hidden w-[160px] mx-auto">
               <ShareButton />
             </div>
           </nav>
+        </div>
+        {/* Test */}
+        <div
+          className="absolute z-50 top-0 bg-red-400 h-full rounded-2xl transition-all duration-200"
+          style={{ width: isMenu ? '100%' : '10%', right: isMenu ? 0 : 100 }}
+        >
+          <button
+            type="button"
+            onClick={() => {
+              setIsMenu(!isMenu);
+            }}
+            className="absolute top-[10px] right-[10px] w-[35px] h-[35px] lg:hidden"
+          >
+            <AiOutlineCloseCircle className="w-full h-full text-blue-sky" />
+          </button>
         </div>
       </header>
       <Hero />
