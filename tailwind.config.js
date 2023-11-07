@@ -5,6 +5,7 @@ module.exports = {
     screens: {
       sm: '375px', //  for mobile screen
       md: '744px', // for tablet screen
+      sLg: '1280px', // for desktop screen from 1280px
       lg: '1440px', // for desktop screen
     },
     fontFamily: {
