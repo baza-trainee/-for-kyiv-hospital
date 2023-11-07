@@ -34,9 +34,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
     @media screen and (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
       background-image: url(./assets/images/Hero/hero_x2_375.jpg);
     }
 
@@ -50,8 +51,8 @@
       background-position: center;
 
       @media screen and (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
         background-image: url(./assets/images/Hero/hero_x2_744.jpg);
       }
 
@@ -65,8 +66,8 @@
         background-position: center;
 
         @media (min-device-pixel-ratio: 2),
-          (min-resolution: 192dpi),
-          (min-resolution: 2dppx) {
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
           background-image: url(./assets/images/Hero/hero_x2_1440.jpg);
         }
       }
