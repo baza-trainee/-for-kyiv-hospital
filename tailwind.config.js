@@ -1,5 +1,6 @@
-/** @type {import('tailwindcss').Config} */ module.exports = {
-  content: ['./src//*.{js,jsx}'],
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./src/**/*.{js,jsx}'],
   theme: {
     screens: {
       sm: '375px', //  for mobile screen
@@ -36,7 +37,6 @@
       },
       backgroundImage: {
         customModal: "url('./assets/images/ShareModal/thank@2x.png')",
-
       },
     },
     plugins: [],
