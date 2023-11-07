@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.24198cab.css",
-    "main.js": "/static/js/main.8899e3db.js",
+    "main.css": "/static/css/main.a2bd4279.css",
+    "main.js": "/static/js/main.9e45db67.js",
     "static/media/goal@2x.jpg": "/static/media/goal@2x.0be8134785c7462be613.jpg",
     "static/media/goal.jpg": "/static/media/goal.33596260153b89942735.jpg",
     "static/media/hospital@2x.png": "/static/media/hospital@2x.7a4baa96a4f5d90ab6a2.png",
@@ -27,11 +27,11 @@
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.5297a3be28293719242b83cb76aab1c8.svg",
     "static/media/facebook.svg": "/static/media/facebook.c4c8817abafb9330b87adbc4223962b3.svg",
-    "main.24198cab.css.map": "/static/css/main.24198cab.css.map",
-    "main.8899e3db.js.map": "/static/js/main.8899e3db.js.map"
+    "main.a2bd4279.css.map": "/static/css/main.a2bd4279.css.map",
+    "main.9e45db67.js.map": "/static/js/main.9e45db67.js.map"
   },
   "entrypoints": [
-    "static/css/main.24198cab.css",
-    "static/js/main.8899e3db.js"
+    "static/css/main.a2bd4279.css",
+    "static/js/main.9e45db67.js"
   ]
 }
