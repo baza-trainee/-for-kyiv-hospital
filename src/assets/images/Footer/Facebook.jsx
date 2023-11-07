@@ -2,7 +2,11 @@ import React from 'react';
 
 const Facebook = () => {
   return (
-    <a href="https://www.facebook.com/GVKG.KYIV" target="_blank">
+    <a
+      href="https://www.facebook.com/GVKG.KYIV"
+      target="_blank"
+      rel="noreferrer"
+    >
       <svg
         width="32"
         height="32"

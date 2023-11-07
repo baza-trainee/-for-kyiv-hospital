@@ -55,7 +55,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="flex flex-col items-center">
-                <button className="p-[8px] flex md:px-[18px] flex md:items-center mdjustify-center md:w-[200px] md:h-[90px] md:rounded-b-2xl md:shadow-donateBoxShadow md:bg-blue-sky md:hover:bg-active-btn md:focus:bg-active-btn md:transition-all ">
+                <button className="p-[8px] flex md:px-[18px] md:items-center mdjustify-center md:w-[200px] md:h-[90px] md:rounded-b-2xl md:shadow-donateBoxShadow md:bg-blue-sky md:hover:bg-active-btn md:focus:bg-active-btn md:transition-all ">
                   <p className=" hidden md:flex title text-[24px] leading-[18px] tracking-wider">
                     Поділитися з друзями
                   </p>
