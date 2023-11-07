@@ -1,12 +1,32 @@
-const Modal = ({ children }) => {
+const Modal = () => {
   return (
-    <div className="fixed w-full h-full top-0 left-0 bg-gray-800/50 backdrop-blur-sm flex justify-center items-center">
-      <div className="w-56 h-1/5 md:w-2/4 inset-x-2/4 inset-y-2/4 translate-y-[-50%] bg-white">
-        <div className="absolute py-5 px-7 h-1/5 flex justify-center items-center shadow-slate-200 flex-col">
-          <botton className="absolute top-4 w-7 h-7 flex justify-center items-center cursor-pointer">
-            <span className="block">&#10006;</span>
-          </botton>
-          {children}
+    <div className="fixed w-full h-full top-0 left-0 bg-gray-800/50 backdrop-blur-sm flex justify-center md:items-center overflow-y-auto">
+      <div className="w-[375px] h-[812px] relative bg-sky-100 py-[80px] flex flex-col items-center">
+        <div>
+          <span>
+            <svg>
+              <use></use>
+            </svg>
+          </span>
+        </div>
+        <h2 className="text-stone-950 text-5xl font-normal font-['Mona-Lisa'] leading-[57.60px] mb-8">
+          Дякуємо за донат!
+        </h2>
+        <div className="w-[343px] text-center text-stone-950 text-2xl font-normal font-['Montserrat'] leading-[28.80px]">
+          Завдяки тобі військові мають можливість бути здоровими!
+        </div>
+        <div>
+          <img
+            srcset="./images/thanks1X.png 1x,
+                            ./images/thanks2X.png 2x"
+            src="./images/thanks1X.png"
+            alt="thank you for donate"
+          />
+        </div>
+        <div className="w-[343px] h-20 p-4 bg-blue-300 rounded-2xl shadow justify-center items-center gap-4 inline-flex">
+          <div className="text-stone-950 text-[40px] font-normal font-['Mona-Lisa'] leading-[48px]">
+            Повернутися назад
+          </div>
         </div>
       </div>
     </div>
