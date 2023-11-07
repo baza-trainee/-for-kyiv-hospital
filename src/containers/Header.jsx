@@ -1,9 +1,14 @@
 import Hero from './Hero';
-import { CgMenuRound } from 'react-icons/cg';
-import { FiExternalLink } from 'react-icons/fi';
+import ShareButton from '../components/ShareButton';
 import Logo from 'assets/images/Header/Logo';
+import { useState } from 'react';
+
+import { CgMenuRound } from 'react-icons/cg';
+import { AiOutlineClose } from 'react-icons/ai';
 
 const Header = () => {
+  const [isMenu, setIsMenu] = useState(false);
+
   return (
     <>
       <header className="absolute top-0 bg-header-color sm:h-[84px] md:h-[90px] w-full">
@@ -43,23 +48,35 @@ const Header = () => {
           </div>
           {/* ------ */}
 
-          {/* Tablet */}
-          <button className="hidden md:flex items-center justify-center w-[200px] h-full px-[18px] md:mr-[166px] lg:mr-[0px] rounded-b-2xl shadow-donateBoxShadow bg-blue-sky hover:bg-active-btn focus:bg-active-btn transition-all">
-            <p className="title text-[24px] leading-[18px] tracking-wider">
-              Поділитися з друзями
-            </p>
-            <FiExternalLink className="w-[24px] h-[24px]" />
-          </button>
-          {/* ------- */}
+          <div className=" hidden md:block md:mr-[166px] lg:mr-[0px]">
+            <ShareButton />
+          </div>
 
-          <button className="sm:inline-block w-[40px] h-[40px] lg:hidden">
-            <CgMenuRound className="w-full h-full text-blue-sky" />
+          <button
+            onClick={() => {
+              setIsMenu(!isMenu);
+            }}
+            className="sm:inline-block w-[40px] h-[40px] lg:hidden"
+          >
+            {isMenu ? (
+              <AiOutlineClose className="w-full h-full text-blue-sky" />
+            ) : (
+              <CgMenuRound className="w-full h-full text-blue-sky" />
+            )}
           </button>
         </div>
         {/* Menu */}
-        <div className="lg:hidden absolute right-0 sm:top-[84px] md:top-[90px] w-[200px] md:w-[241px] h-[252px] md:h-[231px] px-[12px] py-[28px] md:p-[32px] bg-blue-sky rounded-2xl">
-          <nav>
-            <ul className="flex flex-col gap-[24px] md:gap-[40px]">
+
+        <div
+          className={`lg:hidden absolute right-0 sm:top-[84px] md:top-[90px] w-[200px] md:w-[241px] h-[252px] md:h-[231px] px-[12px] py-[28px] md:p-[32px] bg-blue-sky rounded-2xl transition-all duration-200 ease-linear
+            `}
+          style={{
+            opacity: isMenu ? 1 : 0,
+            transform: isMenu ? 'scale(1)' : 'scale(0.5)',
+          }}
+        >
+          <nav className="w-[200px]">
+            <ul className="flex flex-col gap-[24px] md:gap-[40px] mb-[24px] md:mb-[0px] ">
               <li>
                 <a
                   className="text text-[20px] md:text[24px] font-medium leading-1.2"
@@ -84,18 +101,10 @@ const Header = () => {
                   Потреби
                 </a>
               </li>
-              <li>
-                <a
-                  className="flex md:hidden items-center justify-center w-fit title text-[24px] leading-[18px] tracking-wider"
-                  href="/"
-                >
-                  <span>Поділитися з друзями</span>
-                  <span>
-                    <FiExternalLink className="w-[30px] h-[30px]" />
-                  </span>
-                </a>
-              </li>
             </ul>
+            <div className=" md:hidden  ">
+              <ShareButton />
+            </div>
           </nav>
         </div>
       </header>

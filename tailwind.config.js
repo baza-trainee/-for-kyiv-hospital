@@ -16,7 +16,10 @@ module.exports = {
         'light-blue': 'rgba(197, 223, 240, 1)',
         'blue-sky': 'rgba(225, 244, 250, 1)',
         'active-btn': 'rgba(160, 211, 244, 1)',
+        'active-share-btn': 'rgba(144, 202, 249, 1)',
         'header-color': 'rgba(239, 243, 246, 0.25)',
+        'blue-grey': 'rgba(107, 115, 137, 1)',
+        'dark-blue': 'rgba(61, 73, 102, 1)',
       },
       lineHeight: {
         1.2: '1.2',
@@ -27,6 +30,10 @@ module.exports = {
         backInsert: '0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset',
         donateBoxShadow: '0px 4px 4px 0px rgba(219, 219, 219, 0.5)',
         hoveredDonateBoxShadow: '0px 4px 4px 0px rgba(219, 219, 219, 1)',
+        shareModalButtonShadow: '0px 4px 4px 0px rgba(0, 0, 0, 0.25)',
+      },
+      backgroundImage: {
+        customModal: "url('./assets/images/ShareModal/thank@2x.png')",
       },
     },
     plugins: [],
