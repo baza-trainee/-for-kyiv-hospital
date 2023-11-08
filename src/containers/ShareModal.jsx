@@ -48,8 +48,8 @@ const ShareModal = () => {
       onClick={closeOnBackdropClick}
       className="fixed w-full h-full top-0 left-0 bg-gray-800/50 backdrop-blur-sm flex justify-center  overflow-y-auto   "
     >
-      <div className="w-[375px] h-[812px] md:w-[744px] md:h-[664px] lg:w-[1044px] lg:h-[665px] bg-blue-grey relative px-[16px] bg-customModal  bg-contain bg-no-repeat ">
-        <span className="absolute top-[32px] right-[16px] md:right-[40px] lg:right-[60px] cursor-pointer">
+      <div className="w-[375px] h-[812px] md:w-[744px] md:h-[664px] sLg:w-[1044px] sLg:h-[665px] bg-blue-grey relative px-[16px] bg-customModal  bg-contain bg-no-repeat ">
+        <span className="absolute top-[32px] right-[16px] md:right-[40px] sLg:right-[60px] cursor-pointer">
           <img
             className="w-[32px]"
             src={close}
@@ -64,7 +64,7 @@ const ShareModal = () => {
               quote={title}
               className="md:mx-auto w-full"
             >
-              <div className="w-full h-[80px] md:w-[555px] md:mx-auto px-[40px]   rounded-2xl shadow-shareModalButtonShadow border-[3px] border-dark-blue justify-center items-center gap-[24px] inline-flex font-medium  text-white text text-[20px] hover:bg-active-share-btn focus:bg-active-share-btn transition-all hover:border-0 focus:border-0">
+              <div className="w-full h-[80px] md:w-[555px] sLg:w-[541px] md:mx-auto px-[40px]   rounded-2xl shadow-shareModalButtonShadow border-[3px] border-dark-blue justify-center items-center gap-[24px] inline-flex font-medium  text-white text text-[20px] hover:bg-active-share-btn focus:bg-active-share-btn transition-all hover:border-0 focus:border-0">
                 Поділитися y
                 <div>
                   <img src={facebook} alt="facebook" className="w-[32px]" />
