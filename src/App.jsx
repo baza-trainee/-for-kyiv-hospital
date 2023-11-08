@@ -33,9 +33,9 @@ export const App = () => {
               <About />
               <Needs />
               {isShowThank ? <Thank /> : null}
-              {isShowShareModal ? <ShareModal /> : null}
               <ScrollToTopButton />
               <Footer />
+              {isShowShareModal ? <ShareModal /> : null}
             </>
           }
         />
