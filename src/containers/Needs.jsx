@@ -14,9 +14,9 @@ const Needs = () => {
         збереження життя українським бійцям та поліпшення їхнього здоров’я.{' '}
       </p>
 
-      <div class="lg:hidden mb-[32px]">
+      <div className="lg:hidden mb-[32px]">
         <div className="w-full h-[60px] rounded-2xl bg-blue-sky">
-          <div class="w-[30%] h-full rounded-tl-2xl rounded-bl-2xl bg-active-btn"></div>
+          <div className="w-[30%] h-full rounded-tl-2xl rounded-bl-2xl bg-active-btn"></div>
         </div>
         <div className="flex justify-between md:justify-center md:gap-[120px] items-center px-[6px]">
           <p className="text text-[16px] leading-[19px] text-blue-sky">
@@ -48,7 +48,7 @@ const Needs = () => {
           </p>
           <div>
             <div className="w-full h-[60px] rounded-2xl bg-blue-sky">
-              <div class="w-[30%] h-full rounded-tl-2xl rounded-bl-2xl bg-active-btn"></div>
+              <div className="w-[30%] h-full rounded-tl-2xl rounded-bl-2xl bg-active-btn"></div>
             </div>
             <div className="flex justify-between md:justify-center md:gap-[120px] items-center px-[6px]">
               <p className="text text-[16px] leading-[19px] text-blue-sky">
