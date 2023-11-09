@@ -15,6 +15,7 @@ import About from 'containers/About';
 import ErrorPage from 'containers/ErrorPage';
 import ScrollToTopButton from './components/ScrollToTopButton';
 import Needs from 'containers/Needs';
+import Footer from 'containers/Footer';
 
 export const App = () => {
   const { isShowThank } = useThank();
@@ -32,8 +33,9 @@ export const App = () => {
               <About />
               <Needs />
               {isShowThank ? <Thank /> : null}
-              {isShowShareModal ? <ShareModal /> : null}
               <ScrollToTopButton />
+              <Footer />
+              {isShowShareModal ? <ShareModal /> : null}
             </>
           }
         />
