@@ -34,12 +34,11 @@ const About = () => {
   return (
     <section
       id="about"
-      className="container mx-auto md:pb-[60px] pt-[60px] px-[16px] md:pt-[102px] md:px-[40px] lg:pt-[80px] lg:px-[60px] mb-[80px]"
-    >
-      <h2 className=" text-sky-100 text-center md:text-start leading-[67.20px] mb-[24px] md:mb-[32px]  lg:mb-[24px] title text-[56px]">
+      className="container mx-auto pt-[60px] px-[16px] md:pt-[102px] md:px-[40px] sLg:pt-[80px] lg:px-[60px] sLg:px-[60px]">
+      <h2 className=" text-sky-100 text-center md:text-start leading-[67.20px] sLg:mb-[32px] mb-[24px] md:mb-[32px]  lg:mb-[24px] title text-[56px]">
         Про госпіталь
       </h2>
-      <div className="lg:flex lg:flex-row-reverse">
+      <div className="sLg:flex lg:flex-row-reverse sLg:flex-row-reverse">
         <picture>
           <source srcSet={`${hospital} 1x, ${hospitalx2} 2x`} />
           <img
@@ -47,11 +46,11 @@ const About = () => {
             alt="hospital"
             width="343"
             height="257"
-            className="rounded-[16px] mb-[32px] md:w-[664px] md:h-[347px] lg:mb-[0px] lg:w-[648px] lg:ml-[24px]"
+            className="rounded-[16px] mb-[32px] sLg:w-[568px] md:w-[664px] md:h-[347px] lg:mb-[0px] lg:w-[648px] sLg:ml-[24px] lg:ml-[24px]"
           />
         </picture>
         <div>
-          <p className="text text-[16px] md:text-[18px] wm-[343px] md:w-[664px] md:h-[352px] lg:w-[648px] text-sky-100 leading-tight mb-[40px] lg:mb-[40px] lg:mr-[24px]">
+          <p className="sLg:w-[568px] text text-[16px] md:text-[18px] wm-[343px] md:w-[664px] md:h-[352px] lg:w-[648px] text-sky-100 leading-tight mb-[40px] lg:mb-[40px] lg:mr-[24px]">
             Національний військово-медичний клінічний центр «Головний військовий
             клінічний госпіталь» — медичний заклад у Києві, провідна установа
             охорони здоров'я Міністерства оборони України.
