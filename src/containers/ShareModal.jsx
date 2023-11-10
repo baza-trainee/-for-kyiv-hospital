@@ -46,9 +46,9 @@ const ShareModal = () => {
   return (
     <div
       onClick={closeOnBackdropClick}
-      className="fixed w-full h-full top-0 left-0 bg-gray-800/50 backdrop-blur-sm flex justify-center  overflow-y-auto   "
+      className="fixed w-full h-full top-0 left-0 bg-gray-800/50 backdrop-blur-sm flex justify-center  overflow-y-auto "
     >
-      <div className="w-[375px] h-[812px] md:w-[744px] md:h-[664px] sLg:w-[1044px] sLg:h-[665px] bg-blue-grey relative px-[16px] bg-customModal  bg-contain bg-no-repeat sLg:rounded-2xl">
+      <div className="w-[375px] h-[812px] md:w-[744px] md:h-[664px] sLg:w-[1044px] sLg:h-[665px] bg-blue-grey relative px-[16px] bg-customModal  bg-contain bg-no-repeat sLg:rounded-2xl my-auto">
         <span className="absolute top-[32px] right-[16px] md:right-[40px] sLg:right-[60px] cursor-pointer">
           <img
             className="w-[32px]"
