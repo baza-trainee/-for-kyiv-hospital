@@ -8,7 +8,7 @@ const Footer = () => {
   const { showShareModal } = useShareModal();
   return (
     <>
-      <footer className=" bg-footer-color shadow-footerShadow relative ">
+      <footer className=" bg-footer-color shadow-footerShadow">
         <div className="container py-[32px] mx-auto px-[16px] md:px-[40px] lg:px-[60px] h-full">
           <div className="flex-wrap sLg:flex-nowrap flex md:flex-row  lg:pb-[0px] justify-between ">
             <div className="order-1  text-blue-sky  mb-[24px] md:mb-[0px]">
