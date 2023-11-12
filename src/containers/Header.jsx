@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <>
       <header className="absolute top-0 bg-header-color h-[84px] md:h-[90px] w-full">
-        <div className="container mx-auto px-[16px] md:px-[40px] lg:px-[60px] flex h-full justify-between items-center">
+        <div className="container mx-auto px-[16px] md:px-[40px] sLg:px-[60px] flex h-full justify-between items-center">
           <Logo />
 
           {/* Deskop */}
