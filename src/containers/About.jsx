@@ -50,7 +50,7 @@ const About = () => {
           />
         </picture>
         <div>
-          <p className="sLg:w-[568px] text text-[16px] md:text-[18px] wm-[343px] md:w-[664px] md:h-[352px] lg:w-[648px] text-sky-100 leading-tight mb-[40px] lg:mb-[40px] lg:mr-[24px]">
+          <p className="sLg:w-[568px] text text-[16px] md:text-[18px] wm-[343px] md:w-[664px] md:h-[352px] lg:w-[648px] text-sky-100 leading-tight lg:mb-[40px] lg:mr-[24px]">
             Національний військово-медичний клінічний центр «Головний військовий
             клінічний госпіталь» — медичний заклад у Києві, провідна установа
             охорони здоров'я Міністерства оборони України.
