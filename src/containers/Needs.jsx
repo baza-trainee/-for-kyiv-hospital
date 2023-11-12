@@ -2,12 +2,12 @@ const Needs = () => {
   return (
     <section
       id="needs"
-      className="container mx-auto sm:px-[16px] md:px-[40px] sLg:px-[60px] sm:pt-[20px] sm:pb-[60px] md:py-[100px] sLg:py-[80px]"
+      className="container mx-auto px-[16px] md:px-[40px] sLg:px-[60px] pt-[20px] pb-[60px] md:py-[100px] sLg:py-[80px]"
     >
       <h2 className="mb-[32px] lg:mb-[24px] text-center sLg:text-left title text-[56px] leading-1.2 text-blue-sky">
         Потреби
       </h2>
-      <p className="sLg:hidden sm:mb-[32px] text text-[18px] leading-[21px] text-blue-sky text-left">
+      <p className="sLg:hidden mb-[32px] text text-[18px] leading-[21px] text-blue-sky text-left">
         Щодня на придбання Омепразол - порошок для р-ну д/інф. по 40 мг №1 у
         флаконі потрібно більше 50 000 гривень. Тому наша мета зібрати 2 000 000
         гривень для забезпечення госпіталя необхідною кількістю Омепразолу для
@@ -33,7 +33,7 @@ const Needs = () => {
         Військовослужбовці рятують наше життя щосекунди - врятуймо ми й їхнє,
         задонативши на потреби Госпіталя!
       </p>
-      <button className="sLg:hidden inline-block sm:w-[343px] md:w-[312px] h-[88px] p-4 bg-light-blue title hover:bg-active-btn focus:bg-active-btn text-black text-[40px] leading-1.2 rounded-2xl shadow-donateBoxShadow transition-all">
+      <button className="sLg:hidden block sm:inline-block mx-auto sm:w-[343px] md:w-[312px] h-[88px] p-4 bg-light-blue title hover:bg-active-btn focus:bg-active-btn text-black text-[40px] leading-1.2 rounded-2xl shadow-donateBoxShadow transition-all">
         Зробити донат
       </button>
       {/* Deskop */}
