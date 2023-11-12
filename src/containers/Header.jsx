@@ -11,8 +11,8 @@ const Header = () => {
 
   return (
     <>
-      <header className="absolute top-0 bg-header-color sm:h-[84px] md:h-[90px] w-full">
-        <div className="container mx-auto sm:px-[16px] md:px-[40px] lg:px-[60px] flex h-full justify-between items-center">
+      <header className="absolute top-0 bg-header-color h-[84px] md:h-[90px] w-full">
+        <div className="container mx-auto px-[16px] md:px-[40px] lg:px-[60px] flex h-full justify-between items-center">
           <Logo />
 
           {/* Deskop */}
@@ -65,7 +65,7 @@ const Header = () => {
         </div>
         {/* Mobile Menu */}
         <div
-          className={`md:hidden lg:hidden absolute top-0 left-0 md:top-[90px] w-full h-[250px] md:h-full py-[24px] md:p-[32px] bg-blue-sky rounded-2xl transition-all duration-200
+          className={`md:hidden absolute top-0 left-0 w-full h-[252px] flex items-center justify-center bg-blue-sky rounded-2xl transition-all duration-200
             `}
           style={{
             top: isMenu ? 0 : -252,
@@ -80,11 +80,11 @@ const Header = () => {
           >
             <AiOutlineCloseCircle className="w-[35px] h-[35px] text-black" />
           </button>
-          <nav className="w-[200px] mx-auto text-center">
-            <ul className="flex flex-col gap-[24px] md:gap-[40px] mb-[30px] md:mb-[0px] ">
+          <nav className="w-fit mx-auto">
+            <ul className="flex flex-col gap-[24px] mb-[30px]">
               <li>
                 <a
-                  className="text text-[20px] md:text[24px] text-dark-blue font-medium leading-1.2"
+                  className="text text-[20px] text-dark-blue font-medium leading-1.2"
                   href="#goal"
                   onClick={() => setMenu(false)}
                 >
@@ -93,7 +93,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  className="text text-[20px] md:text[24px] text-dark-blue font-medium leading-1.2"
+                  className="text text-[20px] text-dark-blue font-medium leading-1.2"
                   href="#about"
                   onClick={() => setMenu(false)}
                 >
@@ -102,7 +102,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  className="text text-[20px] md:text[24px] text-dark-blue font-medium leading-1.2"
+                  className="text text-[20px] text-dark-blue font-medium leading-1.2"
                   href="#needs"
                   onClick={() => setMenu(false)}
                 >
@@ -110,7 +110,7 @@ const Header = () => {
                 </a>
               </li>
             </ul>
-            <div className="md:hidden w-[160px] mx-auto">
+            <div className="w-[160px]">
               <ShareButton />
             </div>
           </nav>
