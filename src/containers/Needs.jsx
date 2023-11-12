@@ -2,7 +2,7 @@ const Needs = () => {
   return (
     <section
       id="needs"
-      className="container mx-auto sm:px-[16px] md:px-[40px] sLg:px-[60px] sm:py-[60px] md:py-[100px] sLg:py-[80px]"
+      className="container mx-auto sm:px-[16px] md:px-[40px] sLg:px-[60px] sm:pt-[20px] sm:pb-[60px] md:py-[100px] sLg:py-[80px]"
     >
       <h2 className="mb-[32px] lg:mb-[24px] text-center sLg:text-left title text-[56px] leading-1.2 text-blue-sky">
         Потреби
