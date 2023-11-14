@@ -30,12 +30,12 @@ export const App = () => {
             <>
               <Header />
               <Goal />
-              <About />
               <Needs />
-              {isShowThank ? <Thank /> : null}
+              <About />
               <ScrollToTopButton />
               <Footer />
               {isShowShareModal ? <ShareModal /> : null}
+              {isShowThank ? <Thank /> : null}
             </>
           }
         />

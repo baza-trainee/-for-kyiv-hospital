@@ -1,4 +1,7 @@
+import { useThank } from 'hooks/ThankContext';
+
 const Hero = () => {
+  const { showModal } = useThank();
   return (
     <section className="overlay">
       <div className="container mx-auto px-[16px] md:px-[40px] sLg:px-[60px]">
@@ -10,9 +13,15 @@ const Hero = () => {
             Медики Головного військового клінічного госпіталю мужньо боряться за
             життя наших захисників, але без твоєї допомоги вони безкрилі.
           </p>
-          <button className="inline-block w-[250px] sm:w-[343px] md:w-[312px] h-[88px] md:h-[110px] sLg:h-[88px] p-4 mt-[145px] md:mt-[127px] sLg:mt-[58px] lg:mt-[42px] bg-light-blue title hover:bg-active-btn focus:bg-active-btn text-black text-[40px] leading-1.2 rounded-2xl shadow-donateBoxShadow transition-all">
+          <a
+            href="https://send.monobank.ua/jar/2XZVwHizxp"
+            target="_blank"
+            rel="noreferrer"
+            onClick={showModal}
+            className="inline-flex justify-center items-center  w-[250px] sm:w-[343px] md:w-[312px] h-[88px] md:h-[110px] sLg:h-[88px] p-4 mt-[145px] md:mt-[127px] sLg:mt-[58px] lg:mt-[42px] bg-light-blue title hover:bg-active-btn focus:bg-active-btn text-black text-[40px] leading-1.2 rounded-2xl shadow-donateBoxShadow transition-all"
+          >
             Зробити донат
-          </button>
+          </a>
         </div>
       </div>
     </section>

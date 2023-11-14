@@ -5,7 +5,7 @@ const Thank = () => {
   const { closeModal } = useThank();
   return (
     <div className="fixed w-full h-full top-0 left-0 bg-gray-800/50 backdrop-blur-sm flex justify-center md:items-center overflow-y-auto md:p-4">
-      <div className="w-[375px] h-max md:w-[744px] preLg:w-[1044px] bg-sky-100 relative">
+      <div className="w-[375px] h-max md:w-[744px] sLg:w-[1044px] bg-sky-100 relative">
         <span className="absolute top-8 right-4 md:right-10 sLg:right-[60px] cursor-pointer">
           <img src={close} alt="close" onClick={closeModal} />
         </span>
