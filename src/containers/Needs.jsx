@@ -1,4 +1,7 @@
+import { useThank } from 'hooks/ThankContext';
+
 const Needs = () => {
+  const { showModal } = useThank();
   return (
     <section
       id="needs"
@@ -69,9 +72,15 @@ const Needs = () => {
             Військовослужбовці рятують наше життя щосекунди - врятуймо ми й
             їхнє, задонативши на потреби Госпіталя!
           </p>
-          <button className="inline-block w-[312px] h-[86px] p-4 bg-light-blue title hover:bg-active-btn focus:bg-active-btn text-black text-[40px] leading-1.2 rounded-2xl shadow-donateBoxShadow transition-all">
+          <a
+            href="https://send.monobank.ua/jar/2XZVwHizxp"
+            target="_blank"
+            rel="noreferrer"
+            onClick={showModal}
+            className="inline-flex justify-center items-center w-[312px] h-[86px] p-4 bg-light-blue title hover:bg-active-btn focus:bg-active-btn text-black text-[40px] leading-1.2 rounded-2xl shadow-donateBoxShadow transition-all"
+          >
             Зробити донат
-          </button>
+          </a>
         </div>
       </div>
     </section>
