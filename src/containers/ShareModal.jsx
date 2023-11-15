@@ -34,8 +34,7 @@ const ShareModal = () => {
     });
 
   // const pageLink = ' після деплою тут буде посилання';
-  const pageLink =
-    'https://www.figma.com/file/FNGAvyZ7AJjIWWvfmMoHh7/%D0%97%D0%B1%D1%96%D1%80_%D0%B3%D0%BE%D1%81%D0%BF%D1%96%D1%82%D0%B0%D0%BB%D1%8C-(Copy)?node-id=201%3A1497&mode=dev';
+  const pageLink = 'https://for-kyiv-hospital.vercel.app/';
   const title = 'Зроби внесок у Перемогу!';
   const closeOnBackdropClick = e => {
     if (e.target === e.currentTarget) {
