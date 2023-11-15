@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5b2a8cce.css",
-    "main.js": "/static/js/main.7f4459bd.js",
+    "main.css": "/static/css/main.1f47ba2f.css",
+    "main.js": "/static/js/main.d73d2d11.js",
     "static/media/goal@2x.jpg": "/static/media/goal@2x.0be8134785c7462be613.jpg",
     "static/media/goal.jpg": "/static/media/goal.33596260153b89942735.jpg",
     "static/media/hero_2x_1280.jpg": "/static/media/hero_2x_1280.fd9f0d53bdc3bbafd657.jpg",
@@ -11,12 +11,14 @@
     "static/media/hospital@3x.png": "/static/media/hospital@3x.7a4baa96a4f5d90ab6a2.png",
     "static/media/hospital.png": "/static/media/hospital.8df830767ef7369fc94b.png",
     "static/media/Montserrat-VariableFont_wght.ttf": "/static/media/Montserrat-VariableFont_wght.7e687123cd4528224ce5.ttf",
+    "static/media/shareBg@2x.png": "/static/media/shareBg@2x.2ec79e5edf52b8e1e286.png",
     "static/media/remedy@2x_744.png": "/static/media/remedy@2x_744.79ba6456a87c5105cb38.png",
     "static/media/thank@2x.png": "/static/media/thank@2x.7c11bb789c41c14d4138.png",
     "static/media/hero_x2_1440.jpg": "/static/media/hero_x2_1440.4dd3658f8b52e348f8bd.jpg",
     "static/media/hero_x2_744.jpg": "/static/media/hero_x2_744.daced3abcce21381283f.jpg",
     "static/media/remedy@2x_375.png": "/static/media/remedy@2x_375.1029f813efbcdba9298c.png",
     "static/media/Mona_Lisa_engravedC.ttf": "/static/media/Mona_Lisa_engravedC.4b3c71ceef1a29a1f1c7.ttf",
+    "static/media/shareBg.png": "/static/media/shareBg.b55ce4024ac2fb571757.png",
     "static/media/error.png": "/static/media/error.3eb99accb1fe3d59b8ac.png",
     "static/media/error@2x.png": "/static/media/error@2x.7de48398213f60f02486.png",
     "static/media/remedy@1x_744.png": "/static/media/remedy@1x_744.69fbe51859f648e79c9b.png",
@@ -35,11 +37,11 @@
     "index.html": "/index.html",
     "static/media/arrow.svg": "/static/media/arrow.5297a3be28293719242b83cb76aab1c8.svg",
     "static/media/facebook.svg": "/static/media/facebook.c4c8817abafb9330b87adbc4223962b3.svg",
-    "main.5b2a8cce.css.map": "/static/css/main.5b2a8cce.css.map",
-    "main.7f4459bd.js.map": "/static/js/main.7f4459bd.js.map"
+    "main.1f47ba2f.css.map": "/static/css/main.1f47ba2f.css.map",
+    "main.d73d2d11.js.map": "/static/js/main.d73d2d11.js.map"
   },
   "entrypoints": [
-    "static/css/main.5b2a8cce.css",
-    "static/js/main.7f4459bd.js"
+    "static/css/main.1f47ba2f.css",
+    "static/js/main.d73d2d11.js"
   ]
 }
