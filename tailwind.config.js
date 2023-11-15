@@ -36,7 +36,7 @@ module.exports = {
         footerShadow: '0px 4px 4px 0px rgba(224, 224, 224, 0.25)',
       },
       backgroundImage: {
-        customModal: "url('./assets/images/ShareModal/thank@2x.png')",
+        customModal: "url('./assets/images/ShareModal/shareBg@2x.png')",
       },
     },
     plugins: [],
