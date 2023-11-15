@@ -89,4 +89,41 @@
       }
     }
   }
+
+  .remedy-photo {
+    min-width: 280px;
+    height: 384px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background: #003948;
+
+    /* Phone */
+    background-image: url(./assets/images/Needs/remedy@1x_375.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(./assets/images/Needs/remedy@2x_375.png);
+    }
+
+    /* Tablet and Deskop */
+    @media screen and (min-width: 744px) {
+      width: 542px;
+      height: 542px;
+      background-image: url(./assets/images/Needs/remedy@1x_744.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url(./assets/images/Needs/remedy@2x_744.png);
+      }
+    }
+  }
 }
