@@ -33,7 +33,7 @@ const ShareModal = () => {
       theme: 'light',
     });
 
-  const pageLink = 'https://for-kyiv-hospital.site/';
+  const pageLink = 'http://for-kyiv-hospital.site/';
   const title = 'Зроби внесок у Перемогу!';
   const closeOnBackdropClick = e => {
     if (e.target === e.currentTarget) {

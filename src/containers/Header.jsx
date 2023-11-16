@@ -117,9 +117,9 @@ const Header = () => {
         </div>
         {/* Tablet Menu */}
         <div
-          className="hidden lg:hidden absolute z-50 top-0 md:flex justify-center items-center bg-blue-sky h-[93px] rounded-2xl transition-all duration-300"
+          className="hidden lg:hidden   absolute top-0 md:flex justify-center items-center bg-blue-sky h-[93px] rounded-2xl transition-all duration-300"
           style={{
-            width: isMenu ? '100%' : '10%',
+            width: isMenu ? '100%' : '0.01%',
             right: isMenu ? 0 : 100,
             opacity: isMenu ? 1 : 0,
           }}
