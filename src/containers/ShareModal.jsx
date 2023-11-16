@@ -61,12 +61,12 @@ const ShareModal = () => {
             <FacebookShareButton
               url={pageLink}
               quote={title}
-              className="md:mx-auto w-full"
+              className="md:mx-auto w-full md:w-auto"
             >
-              <div className="w-full h-[80px] md:w-[555px] sLg:w-[541px] md:mx-auto px-[40px]   rounded-2xl shadow-shareModalButtonShadow border-[3px] border-dark-blue justify-center items-center gap-[24px] inline-flex font-medium  text-white text text-[20px] hover:bg-active-share-btn focus:bg-active-share-btn transition-all hover:border-0 focus:border-0">
+              <div className=" w-full  h-[80px] md:w-[555px] sLg:w-[541px] md:mx-auto px-[40px]   rounded-2xl shadow-shareModalButtonShadow border-[3px] border-dark-blue justify-center items-center gap-[24px] inline-flex font-medium  text-white text text-[20px] hover:bg-active-share-btn focus:bg-active-share-btn transition-all hover:border-0 focus:border-0">
                 Поділитися y
                 <div>
-                  <img src={facebook} alt="facebook" className="w-[32px]" />
+                  <img src={facebook} alt="facebook" className="w-[32px] " />
                 </div>
               </div>
             </FacebookShareButton>
@@ -75,7 +75,7 @@ const ShareModal = () => {
             <LinkedinShareButton
               url={pageLink}
               quote={title}
-              className="md:mx-auto w-full"
+              className="md:mx-auto w-full md:w-auto"
             >
               <div className="w-full h-[80px] md:w-[555px] md:mx-auto px-[40px]  rounded-2xl shadow-shareModalButtonShadow border-[3px] border-dark-blue justify-center items-center gap-[24px] inline-flex font-medium  text-white text text-[20px] hover:bg-active-share-btn focus:bg-active-share-btn transition-all hover:border-0 focus:border-0">
                 Поділитися y
@@ -89,7 +89,7 @@ const ShareModal = () => {
             <TelegramShareButton
               url={pageLink}
               quote={title}
-              className="md:mx-auto w-full"
+              className="md:mx-auto w-full md:w-auto"
             >
               <div className="w-full h-[80px] md:w-[555px] md:mx-auto px-[40px] rounded-2xl shadow-shareModalButtonShadow border-[3px] border-dark-blue justify-center items-center gap-[24px] inline-flex font-medium  text-white text text-[20px] hover:bg-active-share-btn focus:bg-active-share-btn transition-all hover:border-0 focus:border-0">
                 Поділитися y
@@ -103,7 +103,7 @@ const ShareModal = () => {
             <ViberShareButton
               url={pageLink}
               quote={title}
-              className="md:mx-auto w-full"
+              className="md:mx-auto  w-full md:w-auto"
             >
               <div className="w-full h-[80px] md:w-[555px] md:mx-auto px-[40px]   rounded-2xl shadow-shareModalButtonShadow border-[3px] border-dark-blue justify-center items-center gap-[24px] inline-flex font-medium  text-white text text-[20px] hover:bg-active-share-btn focus:bg-active-share-btn transition-all hover:border-0 focus:border-0">
                 Поділитися y
