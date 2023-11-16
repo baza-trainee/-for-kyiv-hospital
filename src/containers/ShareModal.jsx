@@ -33,8 +33,7 @@ const ShareModal = () => {
       theme: 'light',
     });
 
-  // const pageLink = ' після деплою тут буде посилання';
-  const pageLink = 'https://for-kyiv-hospital.vercel.app/';
+  const pageLink = 'https://for-kyiv-hospital.site/';
   const title = 'Зроби внесок у Перемогу!';
   const closeOnBackdropClick = e => {
     if (e.target === e.currentTarget) {
