@@ -54,7 +54,10 @@ const Footer = () => {
             </div>
 
             <div className=" order-3 sLg:order-2 mt-[32px] sLg:mt-[0px] text-blue-sky text-center text-[18px] self-end grow">
-              Розробка Baza Trainee Ukraine 2023. Всі права захищені
+              Розробка Baza Trainee Ukraine 2023.
+              <span className="block md:inline md:pl-1">
+                Всі права захищені
+              </span>
             </div>
 
             <div className="order-2 sLg:order-3 flex flex-col items-start  md:gap-[32px] ">
